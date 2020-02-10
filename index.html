@@ -9,6 +9,7 @@
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/github-calendar/1.3.1/github-calendar-responsive.css">
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
     <script src="https://unpkg.com/github-calendar@1.3.1/dist/github-calendar.min.js"></script>
     <title>
         Portfolio
@@ -47,9 +48,10 @@
 
     .overlay {
         position: absolute;
+        top: 0;
         bottom: 0;
-        left: 0;
-        right: 0;
+        /* left: 1; */
+        /* right: 0; */
         background-color: #008CBA;
         overflow: hidden;
         width: 65%;
@@ -133,41 +135,57 @@
                     </p>
                 </div>
                 <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/python.jpg"
-                        style="background-color: #2096A0;width: 150px;padding: 12px;"><p class="overlay">
-                            Python
-                        </p></div>
+                        style="background-color: #2096A0;width: 150px;padding: 12px;">
+                    <p class="overlay">
+                        Python
+                    </p>
+                </div>
                 <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/react.svg"
-                        style="background-color: #2096A0;width: 150px;padding: 12px;"><p class="overlay">
-                            React
-                        </p></div>
+                        style="background-color: #2096A0;width: 150px;padding: 12px;">
+                    <p class="overlay">
+                        React
+                    </p>
+                </div>
                 <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/bootstrap.png"
-                        style="background-color: #2096A0;width: 150px;padding: 12px;"><p class="overlay">
-                            Bootstrap
-                        </p></div>
+                        style="background-color: #2096A0;width: 150px;padding: 12px;">
+                    <p class="overlay">
+                        Bootstrap
+                    </p>
+                </div>
             </div>
             <div class="row mt-4">
                 <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/html5.png"
-                        style="background-color: #2096A0;width: 150px;padding: 15px;"><p class="overlay">
-                            HTML5
-                        </p></div>
+                        style="background-color: #2096A0;width: 150px;padding: 15px;">
+                    <p class="overlay">
+                        HTML5
+                    </p>
+                </div>
                 <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/flask.png"
-                        style="background-color: #2096A0;width: 150px;padding: 12px;"><p class="overlay">
-                            Flask
-                        </p></div>
+                        style="background-color: #2096A0;width: 150px;padding: 12px;">
+                    <p class="overlay">
+                        Flask
+                    </p>
+                </div>
                 <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/javascript.png"
-                        style="background-color: #2096A0;width: 150px;padding: 12px;"><p class="overlay">
-                            JavaScript
-                        </p></div>
+                        style="background-color: #2096A0;width: 150px;padding: 12px;">
+                    <p class="overlay">
+                        JavaScript
+                    </p>
+                </div>
                 <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/mongo.jpg"
-                        style="background-color: #2096A0;width: 150px;padding: 12px;"><p class="overlay">
-                            MongoDB
-                        </p></div>
+                        style="background-color: #2096A0;width: 150px;padding: 12px;">
+                    <p class="overlay">
+                        MongoDB
+                    </p>
+                </div>
             </div>
             <div class="row mt-4">
                 <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/css3.svg"
-                        style="background-color: #2096A0;width: 150px;padding: 15px;"><p class="overlay">
-                            CSS3
-                        </p></div>
+                        style="background-color: #2096A0;width: 150px;padding: 15px;">
+                    <p class="overlay">
+                        CSS3
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -293,7 +311,8 @@
                 <!-- Start of card -->
                 <div class="col-md-4 mb-5">
                     <div class="card" style="background-color:#C5EFF8">
-                        <div class="card-body shadow"><img class="mb-3" style="height: 50%" src="Resources/DonaldDuck.png">
+                        <div class="card-body shadow"><img class="mb-3" style="height: 50%"
+                                src="Resources/DonaldDuck.png">
                             <h4 class="card-title"><strong>Donald Duck</strong></h4>
                             <!-- <h6 class="text-muted card-subtitle mb-2">Music, movies &amp; a lot more</h6> -->
                             <p class="card-text">Donald Duck was the topic of the first ever project I have ever created
@@ -301,6 +320,9 @@
                             <a class="card-link text-secondary"
                                 href="https://github.com/Nitin4191/masai-week-1/tree/master/week_1"><i
                                     class="fa fa-github"></i>&nbsp;<strong>Github Link&nbsp;</strong></a>
+                            <a class="card-link text-secondary" href="https://donaldduckweek1.netlify.com/"><span
+                                    class="iconify" data-icon="logos-netlify"
+                                    data-inline="false"></span>&nbsp;<strong>Netlify Link&nbsp;</strong></a>
                         </div>
                     </div>
                 </div>
@@ -309,7 +331,7 @@
                 <div class="col-md-4 mb-5">
                     <div class="card" style="background-color:#C5EFF8">
                         <div class="card-body shadow"><img class="mb-3" style="height: 40%" src="Resources/books.jpg"
-                            <h4 class="card-title"><strong>Books</strong></h4>
+                                <h4 class="card-title"><strong>Books</strong></h4>
                             <!-- <h6 class="text-muted card-subtitle mb-2">Music, movies &amp; a lot more</h6> -->
                             <p class="card-text">Books was the topic I picked for another one of my projects,
                                 it details the evolution of books in various forms throughout human history.
