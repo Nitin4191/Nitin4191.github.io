@@ -37,6 +37,43 @@
         margin-left: 13%;
     }
 
+    .circleborder {
+        width: 200px;
+        height: 200px;
+        background: #C8F2EE;
+        border-radius: 50%;
+        border: 30px solid;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #008CBA;
+        overflow: hidden;
+        width: 65%;
+        height: 0;
+        transition: .5s ease;
+        border-radius: 50%;
+        line-height: 150px;
+        font-size: 30px;
+    }
+
+    .circleoverlay:hover .overlay {
+        height: 100%;
+    }
+
+    .spin {
+        animation: spin 10s infinite linear;
+    }
+
+    @keyframes spin {
+        100% {
+            transform: rotate(1turn);
+        }
+    }
+
 
     @media only screen and (max-width: 768px) {
         .circlePer {
@@ -76,40 +113,61 @@
                 <div class="col">
                     <a href="https://www.linkedin.com/in/nitin-ravi-6824b51b/" target="_blank"><i class="fa fa-linkedin"
                             style="color: black;" aria-hidden="true"> LinkedIn</i></a>
-                    <a href="https://www.facebook.com/nitin.ravi.961" target="_blank"><i class="fa fa-facebook-official ml-2"
-                            style="color: black" aria-hidden="true"> facebook</i></a>
-                    <a href="https://github.com/Nitin4191" target="_blank"><i class="fa fa-github ml-2" style="color: black"
-                            aria-hidden="true"> GitHub</i></a>
-                    <a href="https://twitter.com/NitinRavi5" target="_blank"><i class="fa fa-twitter ml-2" style="color: black"
-                            aria-hidden="true"> twitter</i></a>
+                    <a href="https://www.facebook.com/nitin.ravi.961" target="_blank"><i
+                            class="fa fa-facebook-official ml-2" style="color: black" aria-hidden="true">
+                            facebook</i></a>
+                    <a href="https://github.com/Nitin4191" target="_blank"><i class="fa fa-github ml-2"
+                            style="color: black" aria-hidden="true"> GitHub</i></a>
+                    <a href="https://twitter.com/NitinRavi5" target="_blank"><i class="fa fa-twitter ml-2"
+                            style="color: black" aria-hidden="true"> twitter</i></a>
                 </div>
             </div>
         </div>
         <div class="jumbotron col-lg-6 col-md-12 col-sm-12 mt-5">
 
             <div class="row">
-                <div class="col mb-3"><img class="rounded-circle shadow-sm" src="Resources/git.svg"
-                        style="background-color: #2096A0;width: 150px;padding: 12px;"></div>
-                <div class="col mb-3"><img class="rounded-circle shadow-sm" src="Resources/python.jpg"
-                        style="background-color: #2096A0;width: 150px;padding: 12px;"></div>
-                <div class="col mb-3"><img class="rounded-circle shadow-sm" src="Resources/react.svg"
-                        style="background-color: #2096A0;width: 150px;padding: 12px;"></div>
-                <div class="col mb-3"><img class="rounded-circle shadow-sm" src="Resources/bootstrap.png"
-                        style="background-color: #2096A0;width: 150px;padding: 12px;"></div>
+                <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/git.svg"
+                        style="background-color: #2096A0;width: 150px;padding: 12px;">
+                    <p class="overlay">
+                        GitHub
+                    </p>
+                </div>
+                <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/python.jpg"
+                        style="background-color: #2096A0;width: 150px;padding: 12px;"><p class="overlay">
+                            Python
+                        </p></div>
+                <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/react.svg"
+                        style="background-color: #2096A0;width: 150px;padding: 12px;"><p class="overlay">
+                            React
+                        </p></div>
+                <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/bootstrap.png"
+                        style="background-color: #2096A0;width: 150px;padding: 12px;"><p class="overlay">
+                            Bootstrap
+                        </p></div>
             </div>
             <div class="row mt-4">
-                <div class="col mb-3"><img class="rounded-circle shadow-sm" src="Resources/html5.png"
-                        style="background-color: #2096A0;width: 150px;padding: 15px;"></div>
-                <div class="col mb-3"><img class="rounded-circle shadow-sm" src="Resources/flask.png"
-                        style="background-color: #2096A0;width: 150px;padding: 12px;"></div>
-                <div class="col mb-3"><img class="rounded-circle shadow-sm" src="Resources/javascript.png"
-                        style="background-color: #2096A0;width: 150px;padding: 12px;"></div>
-                <div class="col mb-3"><img class="rounded-circle shadow-sm" src="Resources/mongo.jpg"
-                        style="background-color: #2096A0;width: 150px;padding: 12px;"></div>
+                <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/html5.png"
+                        style="background-color: #2096A0;width: 150px;padding: 15px;"><p class="overlay">
+                            HTML5
+                        </p></div>
+                <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/flask.png"
+                        style="background-color: #2096A0;width: 150px;padding: 12px;"><p class="overlay">
+                            Flask
+                        </p></div>
+                <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/javascript.png"
+                        style="background-color: #2096A0;width: 150px;padding: 12px;"><p class="overlay">
+                            JavaScript
+                        </p></div>
+                <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/mongo.jpg"
+                        style="background-color: #2096A0;width: 150px;padding: 12px;"><p class="overlay">
+                            MongoDB
+                        </p></div>
             </div>
             <div class="row mt-4">
-                <div class="col mb-3"><img class="rounded-circle shadow-sm" src="Resources/css3.svg"
-                        style="background-color: #2096A0;width: 150px;padding: 15px;"></div>
+                <div class="col mb-3 circleoverlay"><img class="rounded-circle shadow-sm" src="Resources/css3.svg"
+                        style="background-color: #2096A0;width: 150px;padding: 15px;"><p class="overlay">
+                            CSS3
+                        </p></div>
             </div>
         </div>
 
@@ -165,9 +223,9 @@
     <div class="container-fluid col-lg-10 mt-5" style="background: #C8F2EE">
         <div class="row h-100 circlePer offset-md-2" style="margin-bottom: 150px">
             <div class="col-lg-3 col-md-12 col-sm-12 mt-5 ml-5">
-                <div style="width: 200px;height:200px; background: #C8F2EE;border-radius: 50%;border:30px solid;border-color: white #06BEB6 #06BEB6 #06BEB6"
-                    class="mt-1">
-                    <p class="text-center font-weight-bold" style="margin-top: 55px;font-size: 35px">
+                <div style="border-color: white #06BEB6 #06BEB6 #06BEB6" class="spin mt-1 circleborder">
+                    <p class="text-center font-weight-bold"
+                        style="line-height: 140px; font-size: 35px; animation: spin 10s infinite reverse linear;">
                         1000+
                     </p>
                 </div>
@@ -178,9 +236,9 @@
                 </p>
             </div>
             <div class="col-lg-3 col-md-12 col-sm-12 mt-5 ml-5">
-                <div style="width: 200px;height:200px; background: #C8F2EE;border-radius: 50%;border:30px solid;border-color: white white #06BEB6 #06BEB6"
-                    class="mt-1">
-                    <p class="text-center font-weight-bold" style="margin-top: 55px;font-size: 35px">
+                <div style="border-color: white white #06BEB6 #06BEB6;" class="spin mt-1 circleborder">
+                    <p class="text-center font-weight-bold"
+                        style="line-height: 140px; font-size: 35px; animation: spin 10s infinite reverse linear;">
                         170+
                     </p>
                 </div>
@@ -191,9 +249,9 @@
                 </p>
             </div>
             <div class="col-lg-3 col-md-12 col-sm-12 mt-5 ml-5">
-                <div style="width: 200px;height:200px; background: #C8F2EE;border-radius: 50%;border:30px solid;border-color: #06BEB6 #06BEB6  #06BEB6 white"
-                    class="mt-1">
-                    <p class="text-center font-weight-bold" style="margin-top: 55px;font-size: 35px">
+                <div class="spin circleborder" style="border-color: #06BEB6 #06BEB6  #06BEB6 white">
+                    <p class="text-center font-weight-bold"
+                        style="line-height: 140px; font-size: 35px; animation: spin 10s infinite reverse linear;">
                         180+
                     </p>
                 </div>
@@ -235,7 +293,7 @@
                 <!-- Start of card -->
                 <div class="col-md-4 mb-5">
                     <div class="card" style="background-color:#C5EFF8">
-                        <div class="card-body shadow"><img class="img-fluid mb-3" src="Resources/DonaldDuck.png">
+                        <div class="card-body shadow"><img class="mb-3" style="height: 50%" src="Resources/DonaldDuck.png">
                             <h4 class="card-title"><strong>Donald Duck</strong></h4>
                             <!-- <h6 class="text-muted card-subtitle mb-2">Music, movies &amp; a lot more</h6> -->
                             <p class="card-text">Donald Duck was the topic of the first ever project I have ever created
@@ -248,7 +306,20 @@
                 </div>
                 <!-- End of card -->
                 <!-- Start of card -->
-
+                <div class="col-md-4 mb-5">
+                    <div class="card" style="background-color:#C5EFF8">
+                        <div class="card-body shadow"><img class="mb-3" style="height: 40%" src="Resources/books.jpg"
+                            <h4 class="card-title"><strong>Books</strong></h4>
+                            <!-- <h6 class="text-muted card-subtitle mb-2">Music, movies &amp; a lot more</h6> -->
+                            <p class="card-text">Books was the topic I picked for another one of my projects,
+                                it details the evolution of books in various forms throughout human history.
+                            </p>
+                            <a class="card-link text-secondary"
+                                href="https://github.com/Nitin4191/masai-week-2/tree/master/week_2/Project_2"><i
+                                    class="fa fa-github"></i>&nbsp;<strong>Github Link&nbsp;</strong></a>
+                        </div>
+                    </div>
+                </div>
                 <!-- End of card -->
                 <!-- Start of card -->
 
